@@ -1,76 +1,30 @@
-# Nuxt Minimal Starter
+# Nuxt 3 Autenticação e Roles
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Este projeto é um sistema web construído com Nuxt 3, focado em autenticação de usuário e controle de acesso baseado em roles. Ele fornece uma estrutura robusta para restringir o acesso a páginas e funcionalidades com base nos diferentes perfis de usuário cadastrados.
 
-## Setup
+## Funcionalidades
 
-Make sure to install dependencies:
+* **Autenticação de Usuário:**
+    * Registro e login de usuários com senhas criptografadas.
+    * Gerenciamento de sessão seguro com cookies.
+* **Controle de Acesso por Roles:**
+    * Definição de diferentes roles para usuários (administrador, editor, usuário comum, etc.).
+    * Restrição de acesso a páginas e funcionalidades com base nos roles atribuídos a cada usuário.
+    * Gerenciamento dinâmico de roles e permissões.
+* **Backend Integrado:**
+    * API construída diretamente no Nuxt 3 para comunicação com o frontend.
+    * Banco de dados SQLite para armazenamento de dados do usuário.
+* **Interface de Administração:**
+    * Painel de controle para gerenciar usuários e roles.
+* **Segurança:**
+    * Proteção contra ataques CSRF e XSS.
+    * Validação de dados de entrada.
 
-```bash
-# npm
-npm install
+## Tecnologias Utilizadas
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# nuxt3auth
+* **Nuxt 3:** Framework Vue.js para aplicações web universais.
+* **Node.js/Nitro:** Runtime JavaScript para o backend.
+* **SQLite:** Banco de dados relacional leve.
+* **bcryptjs:** Biblioteca para criptografia de senhas.
+* **jsonwebtoken:** Biblioteca para geração de tokens JWT.
+* **cookie-parser:** Middleware para análise de cookies.
